@@ -16,8 +16,8 @@ eureka:
     register-with-eureka: true    # 将自己注册进eureka server
     fetch-registry: true    # 是否从eurekaserver抓取已有的注册信息，默认为true，单点无所谓，集群必须设置为true
     service-url:
-#      defaultZone: http://localhost:7001/eureka    单机版写法
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://localhost:7001/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     instance-id: payment8002
     prefer-ip-address: true
