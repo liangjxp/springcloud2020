@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloud-config-client3366" />
         <module name="cloud-comsumer-zk-order80" />
         <module name="cloud-eureka-server7002" />
         <module name="cloud-eureka-server7001" />
@@ -17,34 +18,39 @@
         <module name="cloud-provider-payment8002" />
         <module name="cloud-comsumer-hystrix-dashboard9001" />
         <module name="cloud-provider-consul-payment8006" />
+        <module name="cloud-alibaba-provider-payment9002" />
+        <module name="cloud-alibaba-provider-payment9001" />
+        <module name="cloud-alibaba-sentinel-service8401" />
         <module name="cloud-consumer-feign-hystrix-order80" />
         <module name="cloud-gateway-gateway9527" />
+        <module name="cloud-config-client3355" />
         <module name="cloud-consumer-consul-order80" />
+        <module name="cloud-alibaba-config-nacos-client3377" />
         <module name="cloud-config-center3344" />
-        <module name="cloud-alibaba-provider-payment9001" />
+        <module name="cloud-alibaba-consumer-nacos-order83" />
         <module name="cloud-consumer-feign-order80" />
         <module name="cloud-eureka-server70002" />
         <module name="cloud-comsumer-order80" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="cloud-config-center3345" target="1.8" />
-      <module name="cloud-eureka-server70002" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-alibaba-config-nacos-client3377" options="-parameters" />
+      <module name="cloud-alibaba-consumer-nacos-order83" options="-parameters" />
       <module name="cloud-alibaba-provider-payment9001" options="-parameters" />
+      <module name="cloud-alibaba-provider-payment9002" options="-parameters" />
+      <module name="cloud-alibaba-sentinel-service8401" options="-parameters" />
       <module name="cloud-api-commons" options="-parameters" />
       <module name="cloud-comsumer-hystrix-dashboard9001" options="-parameters" />
       <module name="cloud-comsumer-order80" options="-parameters" />
       <module name="cloud-comsumer-zk-order80" options="-parameters" />
       <module name="cloud-config-center3344" options="-parameters" />
-      <module name="cloud-config-center3345" options="-parameters" />
+      <module name="cloud-config-client3355" options="-parameters" />
+      <module name="cloud-config-client3366" options="-parameters" />
       <module name="cloud-consumer-consul-order80" options="-parameters" />
       <module name="cloud-consumer-feign-hystrix-order80" options="-parameters" />
       <module name="cloud-consumer-feign-order80" options="-parameters" />
-      <module name="cloud-eureka-server70002" options="-parameters" />
       <module name="cloud-eureka-server7001" options="-parameters" />
       <module name="cloud-eureka-server7002" options="-parameters" />
       <module name="cloud-gateway-gateway9527" options="-parameters" />

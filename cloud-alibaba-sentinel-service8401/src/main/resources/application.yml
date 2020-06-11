@@ -1,0 +1,40 @@
+server:
+  port: 8401
+
+#spring:
+#  application:
+#    name: cloud-alibaba-sentinel-service
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#    sentinel:
+#      transport:
+#        dashboard: localhost:8080    # sentinel dashbard
+#        port: 8719     # 默认8719，被占用会自动+1扫描
+#      datasource:
+#        ds1:
+#          nacos:
+#            server-addr: localhost:8848
+#            dataId: sentinel-service
+#            groupId: DEFAULT_GROUP
+#            data-type: json
+#            rule-type: flow
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+spring:
+  cloud:
+    sentinel:
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
