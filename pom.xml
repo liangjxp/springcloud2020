@@ -52,7 +52,7 @@
         <mysql.version>8.0.19</mysql.version>
         <druid.version>1.1.22</druid.version>
         <mybatis.spring.boot.version>2.1.2</mybatis.spring.boot.version>
-        <spring.boot.web>2.2.2.RELEASE</spring.boot.web>
+        <spring.boot.web>2.5.12</spring.boot.web>
         <spring.boot.devtools.version>2.2.2.RELEASE</spring.boot.devtools.version>
         <spring.boot.starter.acutuator.version>2.2.2.RELEASE</spring.boot.starter.acutuator.version>
         <spring.boot.starter.jdbc.version>2.2.2.RELEASE</spring.boot.starter.jdbc.version>
